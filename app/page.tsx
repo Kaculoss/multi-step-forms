@@ -28,14 +28,14 @@ export default function Home() {
         <div className="hidden sm:m-4 p-4 h-[600px] w-[640px] md:w-[750px] lg:w-[945px] bg-white shadow-2xl rounded-xl sm:flex items-start justify-between">
           <BigSideBar />
           <div className="flex items-center justify-between flex-col  w-full flex-1 h-full">
-            <div className="w-full h-full flex-1 flex items-center justify-center">
-              <ThankYou />
-            </div>
             <div className="mb-auto pt-6">
               <PersonalInfo />
               <SelectPlan />
               <AddOns />
               <Summary />
+              <div className="w-full h-full pt-20 flex items-center justify-center">
+                <ThankYou />
+              </div>
             </div>
             <Buttons />
           </div>
