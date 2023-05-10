@@ -1,6 +1,7 @@
 import { WebProvider } from "@/utilities/WebContext";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Frontend Mentor | Multi-step form",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <WebProvider>
           <>{children}</>
         </WebProvider>
+        <Analytics />
       </body>
     </html>
   );
